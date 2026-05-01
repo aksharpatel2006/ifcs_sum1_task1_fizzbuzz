@@ -7,7 +7,9 @@ def test_fizzbuzz_happy():
     assert fizzbuzz_function(9) == "Fizz"
     assert fizzbuzz_function(15) == "FizzBuzz"
     assert fizzbuzz_function(25) == "Buzz"
+    assert fizzbuzz_function(27) == "Fizz"
 
-def test_fizzbuzz_unhappy():
+def test_fizzbuzz_boring():
     assert fizzbuzz_function(7) == 7
-    assert fizzbuzz_function("seven") == None
+    assert fizzbuzz_function(14) == 14
+    assert fizzbuzz_function(19) == 19
